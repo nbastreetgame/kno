@@ -8,12 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var clickCount = 0
+    
+    @IBOutlet weak var clickCountLabel: UILabel!
+    
+    @IBAction func buttonTrapped(_ sender: Any) {
+    
+    
+    
+     clickCount += 1
+        clickCountLabel.text="Количество кликов: \(clickCount)"
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
     }
-
-
+    
 }
 
